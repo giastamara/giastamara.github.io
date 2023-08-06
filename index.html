@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunSport</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <p>Fun<span>Sport</span></p>
+        </div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="user">
+            <ion-icon name="person"></ion-icon>
+        </div>
+
+        <div class="hamb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <div class="container-home" id="home">
+        <div class="home">
+            <div class="content-left">
+                <h4>Hello sport people!</h4>
+                <h2>Enjoy your sport activity with comfortable facilities and infrastructure only at here!</h2>
+                <a href="#gallery"><button>Booking Here</button></a>
+                <div class="socials-circle">
+                    <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-tiktok"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+            <div class="content-right">
+                <p>Fun<span>Sport</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pop-up">
+        <div class="mode"><ion-icon name="sunny"></ion-icon><ion-icon name="moon"></ion-icon></div>
+        <div class="wa"><ion-icon name="logo-whatsapp"></ion-icon></div>
+    </div>
+
+    <!-- About -->
+    <div class="container-about" id="about">
+        <h1>About</h1>
+    </div>
+
+    <!-- Gallery -->
+    <div class="container-gallery" id="gallery">
+        <div class="gallery">
+            <div class="card-gallery">
+                <img src="image/lapangan-bulutangkis.jpg" alt="badminton">
+                <div class="overview">
+                    <h3>Badminton</h3>
+                    <ul>
+                        <li>Ukuran : 13.40 m x 6.10 m</li>
+                        <li>Lantai : Vinyl</li>
+                    </ul>
+                    <button>Booking</button>
+                </div>
+            </div>
+            <div class="card-gallery">
+                <img src="image/tenis-meja.jpg" alt="tenis-meja">
+                <div class="overview">
+                    <h3>Tenis Meja</h3>
+                    <ul>
+                        <li>Ukuran : 13.40 m x 6.10 m</li>
+                        <li>Lantai : Vinyl</li>
+                    </ul>
+                    <button>Booking</button>
+                </div>
+            </div>
+            <div class="card-gallery">
+                <img src="image/lapangan-futsal.jpg" alt="futsal">
+                <div class="overview">
+                    <h3>Futsal</h3>
+                    <ul>
+                        <li>Ukuran : 13.40 m x 6.10 m</li>
+                        <li>Lantai : Vinyl</li>
+                    </ul>
+                    <button>Booking</button>
+                </div>
+            </div>
+            <div class="card-gallery">
+                <img src="image/tenis-lapangan.jpg" alt="tenis">
+                <div class="overview">
+                    <h3>Tenis</h3>
+                    <ul>
+                        <li>Ukuran : 13.40 m x 6.10 m</li>
+                        <li>Lantai : Vinyl</li>
+                    </ul>
+                    <button>Booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="container-contact" id="contact">
+        <h1>Contact</h1>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.navbar li').on('click', function() {
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
